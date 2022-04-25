@@ -1,0 +1,20 @@
+.container{
+    border: 1px solid #f3ebda;
+    width: 400px;
+    height: 400px;
+    background-color: #f7f6f4;
+    margin: auto ;
+}
+
+.imageContainer{
+    border: 1px solid #f3ebda;
+    text-align: center;
+}
+h3{
+    margin-left: 10px;
+
+}
+
+img{
+    padding: 10px 0;
+}
