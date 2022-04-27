@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.miniBody{
+    width: 1500px;
+    margin: auto;
+}
+.headerDiv, .headerDiv2{
+    background-color: #e9e9e9;
+    text-align: center;
+    text-decoration: underline;
+    color: #ccc01d;
+}
+
+.headerDiv2{
+    text-align: left; 
+    margin-top: 20px;
+}
+
+.firstContainer{
+    margin: 50px 0px 30px 0px;
+}
+.SecondContainer{
+    margin: 20px;
+}
+
+.descriptionContainerOfDIRECTIONS li{
+    margin-left: 55px;
+}
+
+.Note{
+    margin-top: 30px;
+}
+.Comments{
+    background-color: #ccc01d;
+    margin: 50px;
+}
+.Comments .auther{
+    padding: 20px 0 0 0;
+}
+
+.linkNote{
+    text-decoration: underline;
+    color: #ccc01d; 
+}

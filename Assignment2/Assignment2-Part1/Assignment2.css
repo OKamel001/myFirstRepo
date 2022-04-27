@@ -1,0 +1,108 @@
+body{
+    background-image: url("./background.png");
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;   
+}
+
+h1{
+    margin: auto 44%;
+    text-shadow: 0px 1px black;
+    margin-top: 50px;
+}
+
+.bigContainer{
+    margin: 50px auto auto auto;
+    border: 7px solid gray;
+    border-radius: 10px;
+    width: 1000px;
+    height: 1500px;
+    display: flex;
+}
+
+.leftSide,
+.rightSide {
+    display: inline-block;
+    height: 98%;
+}
+
+.leftSide{
+    width:70%;
+}
+.rightSide{
+    width: 30%;
+}
+.picDiv{
+background-color: #385428;
+}
+
+.secondImage{
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.firstSpan{
+    font-size: 68px;
+    color: red;
+    font-weight: 600;
+    position: relative;
+    top: -6px;
+    left: 15px;
+}
+.internalContainer{
+    width: 100%;
+    height: 93.2%;
+    display: flex;
+}
+
+.leftSideInternal,
+.rightSideInternal{
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+
+.pBlock {
+    border: 3px solid gray;
+    margin: 8px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.ppBlock {
+    margin: 8px 8px 35px 8px;
+}
+dl{
+    padding: 40px 40px;
+}
+dt{
+    font-weight: 800;
+}
+dd{
+    margin-bottom: 20px;
+}
+
+.footerDiv{
+    left: 452px;
+    width: 1000px;
+    background-color: #90be77;
+    text-align: center;
+    position: relative;
+    top: -61px;
+    height: 40px;
+}
+
+.footerDiv p{
+    padding-top: 10px;
+}
+
+.sign{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
