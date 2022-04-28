@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.page{
+    display: grid;
+    height: 100vh;
+    background-color: #eee;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 20% 10% 50% 20%;
+    grid-template-areas: "header header header header header header header header header header"
+                          "nav nav nav nav nav nav nav nav nav nav"
+                          "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv"
+                          "footer footer footer footer footer footer footer footer footer footer";
+
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-weight: 900;
+    font-size: 38px;
+    border-bottom: 1px solid black;
+}
+header p {
+padding: 60px 0;
+font-size: 38px;
+font-weight: 900;
+}
+nav{
+    grid-area: nav;
+    display: inline-flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+
+}
+
+nav span{
+    padding: 33px 0;
+}
+.bodyContainerDiv{
+   grid-area: bodyContainerDiv;
+   display: flex;
+   justify-content: space-between;
+}
+
+.bodyContainerDiv div{
+    border: 1px solid black;
+    padding: 30px;
+}
+
+footer{
+    grid-area: footer;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+footer p{
+padding: 60px;
+font-size: 38px;
+font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+    .page{
+        display: grid;
+        height: 100vh;
+        background-color: rgb(177, 26, 26);
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: 20% 10% 50% 20%;
+        grid-template-areas: "header header header header header header header header header header"
+                              "nav nav nav nav nav nav nav nav nav nav"
+                              "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv"
+                              "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv "
+                              "footer footer footer footer footer footer footer footer footer footer";
+     }
+  }
+
+/*@media screen and (max-width : 1500px) {
+    .page {
+        background: #eee;
+        border-top: 2px solid #DDDDDD;
+    }
+}
+
+@media screen and (min-width : 600px) and (max-width : 1024px) {
+    .page{
+        display: grid;
+        height: 100vh;
+        background-color: rgb(177, 26, 26);
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 20% 10% 50% 20%;
+        grid-template-areas: "header header header header header header header header header header"
+                              "nav nav nav nav nav nav nav nav nav nav"
+                              "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv"
+                              "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv"
+                              "footer footer footer footer footer footer footer footer footer footer";
+     }
+}
+*/
