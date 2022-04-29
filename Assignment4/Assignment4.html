@@ -7,16 +7,47 @@
         <h1>Hello To Assignment4 JavaScript Function</h1>
         <hr>
         
-        <p class="Question">Expected output of max(20,10) is 20  TEST SUCCEEDED</p>
+        <p class="Question">Expected output of max(20,10) is 20  TEST SUCCEEDED => <br>
+            &nbsp; <br>function findMax(x, y){ <br>
+                &nbsp; &nbsp; &nbsp;return Math.max(x,y) <br>
+                &nbsp;}</p>
         <p class="result" id="firstResult"></p>
         <hr>
         
 
-        <p class="Question">Expected output of maxOfThree(5,4,44) is 44  TEST </p>
+        <p class="Question">Expected output of maxOfThree(5,4,44) is 44  TEST => <br>
+            &nbsp; <br> function findMaxGroup(x, y, z){ <br>
+                &nbsp; &nbsp; &nbsp;return Math.max(x,y,z) <br>
+                &nbsp; } </p>
         <p class="result" id="firstResult2"></p>
         <hr>
 
-        <p class="Question">Is the input charecter Vowel or not </p>
+        <p class="Question">Is the input charecter Vowel or not => <br>
+            <br>
+            &nbsp;function isVowel(char){<br>
+                &nbsp; &nbsp; &nbsp;var isVowelChar = new Boolean(false);<br>
+        
+                &nbsp; &nbsp; &nbsp;switch(char){<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 'a':<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  isVowelChar = true;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 'e':<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    isVowelChar = true;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  break;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 'i':<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  isVowelChar = true;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case 'u':<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  isVowelChar = true;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 'o':<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; isVowelChar = true;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+        
+                    &nbsp; &nbsp; &nbsp; }<br>
+                    &nbsp; &nbsp; &nbsp;  return isVowelChar;<br>
+                    &nbsp; }<br>
+         </p>
         <p class="result" id="firstResult3"></p>
         <p class="Question">Is the input charecter Vowel or not </p>
         <p class="result" id="firstResult4"></p>
@@ -25,35 +56,95 @@
         <hr>
 
         
-        <p class="Question">The Sum of the array of numbers content </p>
+        <p class="Question">The Sum of the array of numbers content => <br>
+            &nbsp;<br>function sumOfArrayElements(...a){<br>
+                &nbsp; &nbsp; &nbsp;num = 0;<br>
+                &nbsp; &nbsp; &nbsp;for (let i = 0; i < a.length; i++) {<br>
+                    &nbsp; &nbsp; &nbsp;num += a[i];<br>
+                    &nbsp; &nbsp; &nbsp; }<br>
+                    &nbsp; &nbsp; &nbsp;return num;<br>
+                    &nbsp;}<br>
+         </p>
         <p class="result" id="firstResult6"></p>
         <hr>
 
-        <p class="Question">The Multiply of the array of numbers content </p>
+        <p class="Question">The Multiply of the array of numbers content =><br>
+            &nbsp; <br>function MultiplyOfArrayElements(...a){<br>
+                &nbsp; &nbsp; &nbsp;    num = 1;<br>
+                &nbsp; &nbsp; &nbsp;   for (let i = 0; i < a.length; i++) {<br>
+                    &nbsp; &nbsp; &nbsp;    num *= a[i];<br>
+                    &nbsp; &nbsp; &nbsp;   }<br>
+                    &nbsp; &nbsp; &nbsp;  return num;<br>
+                    &nbsp;  } </p>
         <p class="result" id="firstResult7"></p>
         <hr>
 
-        <p class="Question"> the Reverse String of (Osama)</p>
+        <p class="Question"> the Reverse String of (Osama) =><br>
+            &nbsp;<br>function reverse(str){<br>
+                &nbsp; &nbsp; &nbsp;if(str.length <= 1){<br>
+                    &nbsp; &nbsp; &nbsp;return str;<br>
+                    &nbsp; &nbsp; &nbsp;}<br>
+              
+                    &nbsp; &nbsp; &nbsp;else {<br>
+                        &nbsp; &nbsp; &nbsp;return str.charAt(str.length - 1) + reverse(str.substring(0, str.length - 1));<br>
+                        &nbsp; &nbsp; &nbsp;}<br>
+                        &nbsp;}<br>
+            
+        </p>
         <p class="result" id="firstResult8"></p>
         <hr>
         
-        <p class="Question"> the length of the longest word in the array</p>
+        <p class="Question"> the length of the longest word in the array => <br>
+            &nbsp;<br>function longestWordInArray(q){<br>
+                &nbsp; &nbsp; &nbsp;LongestValue = q[0];<br>
+                &nbsp; &nbsp; &nbsp;for(let i = 0; i < q.length; i++){<br>
+                    &nbsp; &nbsp; &nbsp;if(LongestValue.length < q[i].length ){<br>
+                        &nbsp; &nbsp; &nbsp;LongestValue = q[i];<br>
+                        &nbsp; &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp; &nbsp;return LongestValue.length;<br>
+                        &nbsp;}
+         
+        </p>
         <p class="result" id="firstResult9"></p>
         <hr>
 
-        <p class="Question"> the words that has  longer length than I parameter</p>
+        <p class="Question"> the words that has  longer length than I parameter =><br>
+            &nbsp;<br> function filterLongWords(a, le){<br>
+                &nbsp; &nbsp; &nbsp;newArray = [];<br>
+                &nbsp; &nbsp; &nbsp;counter = 0;<br>
+                &nbsp; &nbsp; &nbsp;for(let i = 0; i < a.length; i++){<br>
+                    &nbsp; &nbsp; &nbsp;if(a[i].length > le){<br>
+                        &nbsp; &nbsp; &nbsp;newArray[counter] = a[i];<br>
+                        &nbsp; &nbsp; &nbsp; counter ++;<br>
+                        &nbsp; &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp;}<br>
+                        &nbsp; &nbsp; &nbsp;return newArray;<br>
+                        &nbsp;}
+            
+        </p>
         <p class="result" id="firstResult10"></p>
         <hr>
 
-        <p class="Question">  multiply each element by 10</p>
+        <p class="Question">  multiply each element by 10 => <br>
+            &nbsp;<br>const b = a.map(function (elem, i, array) {<br>
+                &nbsp; &nbsp; &nbsp;return elem * 10;<br>
+                &nbsp; });</p>
         <p class="result" id="firstResult11"></p>
         <hr>
 
-        <p class="Question"> return array with all elements equal to 3</p>
+        <p class="Question"> return array with all elements equal to 3 =>  <br>
+            &nbsp;<br> const c = a.filter(function (elem, i, array) { <br>
+                &nbsp; &nbsp; &nbsp;return elem === 3; <br> 
+                &nbsp;});
+        </p>
         <p class="result" id="firstResult12"></p>
         <hr>
 
-        <p class="Question"> return the product of all elements</p>
+        <p class="Question"> return the product of all elements => <br> 
+            &nbsp;<br>const d = a.reduce(function (accumulator, elem) {<br>
+                &nbsp; &nbsp; &nbsp;return accumulator * elem;<br>
+                &nbsp;}, 1);</p>
         <p class="result" id="firstResult13"></p>
         <hr>
         <p>Please open the Console</p>
