@@ -69,13 +69,13 @@ font-weight: 900;
         display: grid;
         height: 100vh;
         background-color: rgb(177, 26, 26);
-        grid-template-columns: repeat(10, 10%);
+        grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 20% 10% 50% 20%;
-        grid-template-areas: "header header header header header header header header header header"
-                              "nav nav nav nav nav nav nav nav nav nav"
+        grid-template-areas: "header header header header header header header header "
+                              "nav nav nav nav nav nav nav nav"
                               "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv"
-                              "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv "
-                              "footer footer footer footer footer footer footer footer footer footer";
+                              "bodyContainerDiv bodyContainerDiv bodyContainerDiv bodyContainerDiv"
+                              "footer footer footer footer footer footer footer footer";
      }
   }
 
