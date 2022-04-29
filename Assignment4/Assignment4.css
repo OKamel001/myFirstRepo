@@ -1,0 +1,15 @@
+
+h1{
+    text-align: center;
+}
+.Question {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.result{
+    font-size: 22px;
+    font-weight: 300;
+    color: red;
+}
